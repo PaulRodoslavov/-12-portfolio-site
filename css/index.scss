@@ -1,0 +1,30 @@
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ------------Styles for header----------*/
+
+.header {
+  height: 50px;
+  background: olive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logoName {
+    margin-left: 15px;
+  }
+}
+.navigation {
+  &__links {
+    display: flex;
+    li {
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+      
+    }
+  }
+}
