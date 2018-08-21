@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Multi-level Dropdown Navigation Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./dist/menu.min.css">
+    <style>
+    body { font-family: 'Quicksand'; }
+        h1 { margin-top: 150px; }
+        h2 { margin-bottom: 50px; }
+    </style>
+</head>
+
+<body>
+<div class="ve-menu">
+  <ul class="ve-menu-pc">
+     <li><a href="#">Skils</a></li>
+            <li><a href="#">Expirience</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+<h2>RESIZE THE WINDOW</h2>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="./dist/menu.min.js"></script>
+
+    <script>
+        $('.ve-menu').menu({
+            fontSize: 14,
+            fontColor: '#333',
+            bgColor: '#fff',
+            hoverFontColor: '#2e76ef',
+            hoverBgColor: '#fff',
+            itemSpace: 5,
+            subFontSize: 14,
+            itemWidth: 40,
+            animate: 'slide',
+            speed: 500,
+        });
+    </script>
+</body>
+
+</html>

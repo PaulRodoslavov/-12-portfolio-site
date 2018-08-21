@@ -1,0 +1,98 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Descriptive Base Colors
+
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+$fountain-blue  : #76DBF8;
+$emerald        : #5ece7f;
+$sunglo         : #e67478;
+$coral          : #ff784f;
+$purple-majesty : #9279c3;
+$scooter        : #39add1;
+$bermuda        : #6EDBBC;
+
+
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Color Palette Modifiers
+
+$palettes: (
+  grey: (
+    xx-light : lighten($grey, 43%),
+    x-light  : lighten($grey, 35%),
+    light    : lighten($grey, 12%),
+    base     : $grey,
+    dark     : darken($grey, 8%),
+    x-dark   : darken($grey, 16%)
+  ),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+// UI Colors
+
+$ui-colors: (
+  default : $scooter,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty
+);
+
+// Grid Theme Colors
+
+$grid-theme-colors: (
+  12  : $bermuda,
+  6 : darken($fountain-blue, 20%),
+  4 : $fountain-blue,
+  3 : lighten($purple-majesty, 5%),
+  5 : $emerald,
+  7 : $sunglo,
+  8 : ($coral)
+);
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+
+// Font Stacks
+
+$font-url--google        : 'https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,700,900';
+$font-family--primary    : 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@import url($font-url--google);
+
+// Grid
+
+$g-col-width    : 100px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1400px;
+
+// Breakpoints
+
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 768px;
+$brkpoint-lg    : 1100px;
+
+// Width container
+
+$width-con : 85%;
