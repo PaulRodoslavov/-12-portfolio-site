@@ -32,22 +32,8 @@
   }
 }
 .navigation {
-
-
-  // position: fixed;
-  // top:0;
-  // left: 0;
-  // width: 100%;
-  // height: 100%;
-  // background: $black;
   &__links {
-    display: flex;
-    // margin-top: 20px;
-    // margin-left: 15px;
-    // flex-direction: column;
-    & li {
-      // margin-bottom: 15px;
-    }
+    display: none;
     a:hover {
       color: #ffe566;
     }
@@ -61,8 +47,7 @@
 }
 
 .aboutMe {
-  height: 500px;
-  // height: 350px;
+  height: 350px;
   display: flex;
   background: url(../img/web-development.jpg) no-repeat fixed center;
   background-size: cover;
@@ -79,7 +64,7 @@
     z-index: 2;
   }
   &__description {
-    border: 1px solid red;
+    // border: 1px solid red;
     width: $width-con;
     position: relative;
     z-index: 3;
@@ -101,16 +86,11 @@
 
   }
 }
-.skills {
-  height: 1300px;
-  background: rgba(102,255,255, .3);
-  background: rgba(102,128,255, .5);
-}
+
 .svg_humb-none {
   display: none;
 }
 .svg_humb {
-  display: none;
   fill: $white;
   position: absolute;
   top: 6px;
@@ -127,10 +107,9 @@
   right: 29px;
 }
 .svg_cross:hover {
-  fill: #ffe566;;
+  fill: #ffe566;
   cursor: pointer;
 }
-
 .menuPopUp {
   display: none;
   transition: .3s;
@@ -144,7 +123,6 @@
   & a {
     color: white;
   }
-
   &__ul {
     margin: 60px 0 0 20px;
     font-size: 1.5em;
@@ -154,59 +132,143 @@
     }
     & li:hover a {
       color: #ffe566;
-
     }
       li:hover {
         background-color: $black;
         cursor: pointer;
-
       }
-
   }
 }
+.skills {
+  padding: 40px 0;
+  background: rgba(102,255,255, .3);
+  background: rgba(102,128,255, .5);
+  background: #f6f6f7;
+  text-align: center;
+  &-wrap {
+    margin: 0 auto 30px;
+    max-width: 400px;
+  }
+  &__tittle{
+    font-size: 1.5em;
+    &__escription {
+      font-size: 1.1em;
+
+    }
+  }
+}
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card {
+  transition: all 200ms ease;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 calc(50% - 1rem);
+  border: 1px solid #ebecec;
+  border-radius: 10px;
+  margin: 3px;
+  padding: 20px;
+  height: 180px;
+  &:hover {
+    box-shadow: 0 6px 25px rgba(0,0,0,.1);
+    transform: translateY(-1px);
+  }
+  & img {
+    margin: 0 auto;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  & p {
+    margin-top: 20px;
+  }
+}
+
+.project {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebecec;
+  &__description {
+    & a {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 1.5em;
+      color: #2d2d2d;
+    }
+  }
+  &__photo {
+    & img {
+      width: 400px;
+    }
+  }
+}
+.tech-wrap {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  &__list {
+    margin-right: 10px;
+    background: #ffe566;
+    padding: 5px;
+  }
+}
+
+
 
 .active {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .svg_humb {
-    display: block;
+@media (min-width: 768px) {
+  .aboutMe {
+    height: 500px;
+    &__description {
+      max-width: 850px;
+      &--position {
+        font-size: 3.2em;
+      }
+      &--welcome{
+        font-size: 1.4em;
+      }
+    }
   }
-  .navigation__links {
+  .navigation {
+    &__links {
+      display: flex;
+    }
+  }
+  .svg_humb {
     display: none;
   }
-  // .header {
-  //   display: flex;
-  //   align-items: center;
-  //   height: 50px;
-  //   width: 100%;
-  //   background: #6680ff;
-  //   position: fixed;
-  //   z-index: 100;
-  //   &__logoName {
-  //     color: $black;
-  //     & a{
-  //       padding: 10px;
-  //       font-size: 1.5em;
-  //       color: #ffe566;
-  //     }
-  //
-  //   }
-  // }
-  // .navigation {
-  //   &__links {
-  //     display: flex;
-  //     a:hover {
-  //       color: #ffe566;
-  //     }
-  //     a{
-  //       font-size: 20px;
-  //       padding: 10px;
-  //       cursor: pointer;
-  //       color: black;
-  //     }
-  //   }
-  // }
+  .skills {
+    &-wrap {
+      max-width: 650px;
+    }
+    &__tittle{
+      font-size: 2.3em;
+      margin: 30px;
+      &--description {
+        font-size: 1.6em;
+      }
+    }
+  }
+  .card {
+    flex: 1 1 calc(25% - 1rem);
+  }
 
+  .project {
+    display: flex;
+    &__description {
+      text-align: left;
+
+    }
+  }
+  .tech-wrap {
+    justify-content: left;
+  }
 }
