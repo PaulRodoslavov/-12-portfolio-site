@@ -18,15 +18,18 @@
   align-items: center;
   height: 50px;
   width: 100%;
-  background: #6680ff;
+  background: #3d4c99;
   position: fixed;
   z-index: 100;
   &__logoName {
-    color: $black;
+
+    & span {
+      font-weight: 600;
+    }
     & a{
       padding: 10px;
       font-size: 1.3em;
-      color: #ffe566;
+      color: rgba(255,229,102, .8);
     }
 
   }
@@ -194,6 +197,8 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #ebecec;
   &__description {
+    width: 100%;
+    margin: 0 auto;
     & a {
       margin-bottom: 20px;
       font-weight: 600;
@@ -202,8 +207,10 @@
     }
   }
   &__photo {
+    margin: 0 auto;
+    width: 80%;
     & img {
-      width: 400px;
+      width: 100%;
     }
   }
 }
@@ -217,9 +224,38 @@
     padding: 5px;
   }
 }
+.footer {
+  background: linear-gradient(#3d4c99, #f6f6f7);
+  // background: #f6f6f7;
+  text-align: center;
+  &__description {
+    width: 600px;
+    margin: 20px auto;
+  }
+  &__email {
+    a {
+      border: 1px solid $white;
+      padding: 10px;
+      color: $white;
+    }
+    &--adress {
+      margin-top: 10px;
+    }
+  }
+  &__madeBy {
+    height: 50px;
+    background: #273162;
+  }
+}
+.custom-icon {
+  width: 60px;
+  height: 60px;
 
+}
 
-
+.outer-shape:hover {
+  fill: red;
+}
 .active {
   display: block;
 }
