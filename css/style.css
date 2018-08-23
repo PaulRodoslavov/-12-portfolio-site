@@ -193,7 +193,7 @@ body {
   background: linear-gradient(#3d4c99, #f6f6f7);
   text-align: center; }
   .footer__description {
-    width: 600px;
+    max-width: 600px;
     margin: 20px auto; }
   .footer__email a {
     border: 1px solid #fff;

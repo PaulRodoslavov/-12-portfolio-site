@@ -53,6 +53,7 @@
   height: 350px;
   display: flex;
   background: url(../img/web-development.jpg) no-repeat fixed center;
+  
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -229,7 +230,7 @@
   // background: #f6f6f7;
   text-align: center;
   &__description {
-    width: 600px;
+    max-width: 600px;
     margin: 20px auto;
   }
   &__email {
