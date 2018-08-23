@@ -143,7 +143,7 @@
   display: block;
 }
 .skills {
-  padding: 40px 0;
+  padding: 40px 0 20px;
   background: rgba(102,255,255, .3);
   background: rgba(102,128,255, .5);
   background: #f6f6f7;
@@ -190,7 +190,16 @@
     margin-top: 20px;
   }
 }
-
+.portfolio {
+  text-align: center;
+  &-wrap {
+    margin-bottom: 50px;
+  }
+  &__tittle {
+    margin-top: 30px;
+    font-size: 2.3em;
+  }
+}
 .project {
   text-align: center;
   margin-top: 30px;
@@ -220,7 +229,7 @@
   justify-content: center;
   &__list {
     margin-right: 10px;
-    background: #ffe566;
+    background: rgba(255, 229, 102, 0.8);
     padding: 5px;
   }
 }
