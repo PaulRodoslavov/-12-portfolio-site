@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,12 +7,8 @@
   <title>Paul's Website</title>
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-
-
 </head>
-
 <body>
-
   <header class="header">
     <div class="container flex">
       <div class="header__logoName">
@@ -20,9 +16,9 @@
       </div>
       <nav class="navigation">
         <ul class="navigation__links">
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#skills" id="linkSkills">Skills</a></li>
+          <li><a href="#portfolio" id="linkPortfolio">Portfolio</a></li>
+          <li><a href="#contact" id="linkContact">Contact</a></li>
         </ul>
         <svg class='svg_humb' height="40px" id="svg1" viewBox="0 0 32 32" width="40px" xml:space="preserve">
             <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
@@ -32,14 +28,14 @@
   </header>
   <section class="aboutMe">
     <div class="aboutMe__description">
-      <div class="aboutMe__description--position">Front End Web Developer</div>
-      <div class="aboutMe__description--welcome">Hi, I'm Paul! I design and develop websites, and I write concise, effective tutorials on web design and full-stack development.</div>
+      <h2 class="aboutMe__description--position">Front End Web Developer</h2>
+      <div class="aboutMe__description--welcome">Hi there, I'm Paul! I develop websites, avidly learn awesome stuff and embody great ideas in life</div>
     </div>
   </section>
-  <section class="skills">
+  <section class="skills" id="skills">
     <div class="skills-wrap">
-      <div class="skills__tittle">Technical Skills</div>
-      <div class="skills__description">I specialize in front end development and design, with knowledge in system administration and back end development.</div>
+      <h2 class="skills__tittle">Technical Skills</h2>
+      <div class="skills__description">I specialize in front end development with basic knowledge in this field</div>
     </div>
     <div class="container">
       <div class="skillList">
@@ -93,13 +89,11 @@
         </div>
       </div>
     </div>
-
   </section>
 
-
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="portfolio-wrap">
-      <div class="portfolio__tittle">Portfolio</div>
+      <h2 class="portfolio__tittle">Portfolio</h2>
       <div class="portfolio__description">Here are a few examples of my work.</div>
     </div>
     <div class="container">
@@ -111,15 +105,14 @@
         </div>
         <div class="project__description">
           <a href="https://paulrodoslavov.github.io/-9-Web-App-Dashboard/">
-              <a href="#">
                 <h2>Web App Dashboard</h2>
-              </a>
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem cum beatae in. Quis temporibus accusantium aperiam odit r atione neque aliquam at, dolorem libero, ipsam animi doloribus nobis similique quae?</p>
+          <p>This is a mockup of a social media site built from scratch. Contains charts, autocomplete search, and user settings built in JavaScript.</p>
           <div class="tech-wrap">
             <div class="tech-wrap__list">HTML5</div>
             <div class="tech-wrap__list">CCS/SASS</div>
             <div class="tech-wrap__list">Java script</div>
+            <div class="tech-wrap__list">jQuery</div>
             <div class="tech-wrap__list">AJAX</div>
           </div>
         </div>
@@ -134,11 +127,12 @@
           <a href="https://paulrodoslavov.github.io/-7-WHEEL-OF-SUCCESS/">
             <h2>Wheel of Success</h2>
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem cum beatae in. Quis temporibus accusantium aperiam odit r atione neque aliquam at, dolorem libero, ipsam animi doloribus nobis similique quae?</p>
+          <p>This project is a guessing game that was built with JavaScript.</p>
           <div class="tech-wrap">
             <div class="tech-wrap__list">HTML5</div>
             <div class="tech-wrap__list">CCS/SASS</div>
             <div class="tech-wrap__list">Java script</div>
+            <div class="tech-wrap__list">jQuery</div>
           </div>
         </div>
       </div>
@@ -152,7 +146,7 @@
           <a href="https://paulrodoslavov.github.io/-5-One-page-site-SASS/">
             <h2>Responsive Layout</h2>
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem cum beatae in. Quis temporibus accusantium aperiam odit r atione neque aliquam at, dolorem libero, ipsam animi doloribus nobis similique quae?</p>
+          <p>This project is a responsive, mobile-first website using Flexbox and Sass.</p>
           <div class="tech-wrap">
             <div class="tech-wrap__list">HTML5</div>
             <div class="tech-wrap__list">CCS/SASS</div>
@@ -169,7 +163,7 @@
           <a href="https://github.com/PaulRodoslavov/-11-React-Flickr-Gallery">
             <h2>React Flickr Gallery</h2>
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem cum beatae in. Quis temporibus accusantium aperiam odit r atione neque aliquam at, dolorem libero, ipsam animi doloribus nobis similique quae?</p>
+          <p>This project is a React application that receives information through an API and displays the content in components through client-side routing.</p>
           <div class="tech-wrap">
             <div class="tech-wrap__list">HTML5</div>
             <div class="tech-wrap__list">CCS</div>
@@ -188,7 +182,7 @@
           <a href="https://paulrodoslavov.github.io/-8-SVG-Animations/">
             <h2>SVG Animations</h2>
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi rem cum beatae in. Quis temporibus accusantium aperiam odit r atione neque aliquam at, dolorem libero, ipsam animi doloribus nobis similique quae?</p>
+          <p>This is a mockup of a website with using SVG Animation.</p>
           <div class="tech-wrap">
             <div class="tech-wrap__list">HTML5</div>
             <div class="tech-wrap__list">CCS</div>
@@ -199,22 +193,20 @@
     </div>
   </section>
 
-
-
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
       <div class="header__logoName">
         <a href="index.html">Paul<span>Rodoslavov</span></a>
       </div>
-      <div class="footer__description">Web developer, designer, autodidact, tech writer and problem solver. I love hiking, recording music, and building communities.
+      <div class="footer__description">
+        <p>I am located in Seattle, Washington. If you are interested in speaking with me, please feel free to contact me.</p>
+        <div class="footer__email">
+          <a href="mailto:paul@gmail.com">Email Me</a>
+          <div class="footer__email--adress">paul@gmail.com</div>
+        </div>
       </div>
-      <div class="footer__email">
-        <a href="mailto:paul@gmail.com">Email Me</a>
-        <div class="footer__email--adress">paul@gmail.com</div>
-      </div>
-    </div>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/paul-rodoslavov-985166140/">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/paul-rodoslavov-985166140/">
         <svg class="custom-icon">
           <circle class="outer-shape" cx="50" cy="50" r="48" fill="#3d4c99" transform="scale(.5)" />
           <path class="inner-shape" transform="translate(15 15) scale(.2)"
@@ -223,21 +215,26 @@
         </svg>
       </a>
 
-      <a href="https://github.com/PaulRodoslavov">
+        <a href="https://github.com/PaulRodoslavov">
         <svg class="custom-icon">
           <circle class="outer-shape" cx="50" cy="50" r="48" transform="scale(.5)" fill="#3d4c99"/>
           <path class="inner-shape" transform="translate(15 15) scale(.2)" d="m50 1c-27.062 0-49 21.938-49 49s21.938 49 49 49 49-21.938 49-49-21.938-49-49-49zm29.099 78.099c-3.782 3.782-8.184 6.75-13.083 8.823-1.245 0.526-2.509 0.989-3.79 1.387v-7.344c0-3.86-1.324-6.699-3.972-8.517 1.659-0.16 3.182-0.383 4.57-0.67s2.855-0.702 4.402-1.245 2.935-1.189 4.163-1.938c1.228-0.75 2.409-1.723 3.541-2.919s2.082-2.552 2.847-4.067 1.372-3.334 1.818-5.455 0.67-4.458 0.67-7.01c0-4.945-1.611-9.155-4.833-12.633 1.467-3.828 1.308-7.991-0.478-12.489l-1.197-0.143c-0.829-0.096-2.321 0.255-4.474 1.053s-4.57 2.105-7.249 3.924c-3.797-1.053-7.736-1.579-11.82-1.579-4.115 0-8.039 0.526-11.772 1.579-1.69-1.149-3.294-2.097-4.809-2.847s-2.727-1.26-3.637-1.532c-0.909-0.271-1.754-0.439-2.536-0.503s-1.284-0.079-1.507-0.048-0.383 0.064-0.478 0.096c-1.787 4.53-1.946 8.694-0.478 12.489-3.222 3.477-4.833 7.688-4.833 12.633 0 2.552 0.223 4.889 0.67 7.01s1.053 3.94 1.818 5.455 1.715 2.871 2.847 4.067 2.313 2.169 3.541 2.919c1.228 0.751 2.616 1.396 4.163 1.938 1.547 0.543 3.014 0.957 4.402 1.245 1.388 0.287 2.911 0.511 4.57 0.67-2.616 1.787-3.924 4.626-3.924 8.517v7.487c-1.445-0.43-2.869-0.938-4.268-1.53-4.899-2.073-9.301-5.041-13.083-8.823s-6.75-8.184-8.823-13.083c-2.143-5.068-3.23-10.456-3.23-16.016s1.087-10.948 3.231-16.016c2.073-4.899 5.041-9.301 8.823-13.083s8.184-6.75 13.083-8.823c5.068-2.144 10.456-3.231 16.016-3.231s10.948 1.087 16.016 3.231c4.9 2.073 9.301 5.041 13.083 8.823s6.75 8.184 8.823 13.083c2.143 5.069 3.23 10.457 3.23 16.016s-1.087 10.948-3.231 16.016c-2.073 4.899-5.041 9.301-8.822 13.083z" fill="#f7f7f7"/>
         </svg>
       </a>
-    </div>
 
-    <div class="footer__madeBy">
-      <span>Made by Paul Rodoslavov</span>
+        <a href="#">
+          <svg class="outer-shape1" width="48px" height="48px" viewBox="121.445 0 596 595.281" >
+          	<circle class="outer-shape" fill="#3d4c99" cx="420.944" cy="296.781" r="294.5"/>
+          	<path fill="#FFFFFF" d="M609.773,179.634c-13.891,6.164-28.811,10.331-44.498,12.204c16.01-9.587,28.275-24.779,34.066-42.86   c-14.955,8.879-31.537,15.328-49.209,18.801c-14.125-15.056-34.266-24.456-56.551-24.456c-42.773,0-77.461,34.675-77.461,77.473   c0,6.064,0.682,11.98,1.996,17.66c-64.389-3.236-121.474-34.079-159.684-80.945c-6.672,11.446-10.491,24.754-10.491,38.953   c0,26.875,13.679,50.587,34.464,64.477c-12.699-0.396-24.643-3.882-35.097-9.686c0,0.322,0,0.645,0,0.979   c0,37.54,26.701,68.842,62.145,75.961c-6.511,1.785-13.344,2.716-20.413,2.716c-4.998,0-9.847-0.472-14.584-1.364   c9.859,30.769,38.47,53.166,72.363,53.799c-26.515,20.785-59.925,33.174-96.212,33.174c-6.25,0-12.427-0.372-18.491-1.104   c34.291,21.988,75.006,34.824,118.759,34.824c142.496,0,220.427-118.052,220.427-220.428c0-3.361-0.074-6.697-0.236-10.021   C586.245,208.815,599.392,195.174,609.773,179.634z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__madeBy">
+        <span>Made by Paul Rodoslavov</span>
+      </div>
     </div>
   </footer>
-
-
-
 
   <div class="menuPopUp">
     <div class="container">
@@ -245,9 +242,9 @@
         <a class="menuPopUp-logo" href="index.html">Paul<span>Rodoslavov</span></a>
       </div>
       <ul class="menuPopUp__ul">
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <svg class='svg_cross' id="svg2" width="30px" height="30px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
       <g><path d="M638.6,500l322.7-322.7c38.3-38.3,38.3-100.3,0-138.6C923,0.4,861,0.4,822.7,38.7L500,361.4L177.3,38.7C139,0.4,77,0.4,38.7,38.7C0.4,77,0.4,139,38.7,177.3L361.4,500L38.7,822.7C0.4,861,0.4,923,38.7,961.3C57.9,980.4,82.9,990,108,990s50.1-9.6,69.3-28.7L500,638.6l322.7,322.7c19.1,19.1,44.2,28.7,69.3,28.7c25.1,0,50.1-9.6,69.3-28.7c38.3-38.3,38.3-100.3,0-138.6L638.6,500z"/></g>

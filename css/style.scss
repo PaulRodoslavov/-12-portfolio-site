@@ -39,6 +39,7 @@
     display: none;
     a:hover {
       color: #ffe566;
+      border-bottom: 2px solid #ffe566;
     }
     a{
       font-size: 20px;
@@ -48,6 +49,8 @@
     }
   }
 }
+
+/* ------------Styles for section aboutme----------*/
 
 .aboutMe {
   height: 350px;
@@ -91,24 +94,8 @@
   }
 }
 
+/* ------------Styles for mobile menu----------*/
 
-.svg_humb {
-  fill: $white;
-  fill: #fff;
-  cursor: pointer;
-}
-.svg_cross {
-  // display: none;
-  fill: $white;
-  position: absolute;
-  top: 10px;
-  fill: #fff;
-  right: 29px;
-}
-.svg_cross:hover {
-  fill: #ffe566;
-  cursor: pointer;
-}
 .menuPopUp {
   // display: none;
   transition: .7s;
@@ -126,26 +113,26 @@
     color: white;
     & a {
       color: white;
-    }
-    & li {
       padding: 15px 0;
+      display: block;
     }
-    & li:hover a {
+
+    & a:hover {
       color: #ffe566;
+      background: #7781b7;
+      cursor: pointer;
     }
-      li:hover {
-        background: #7781b7;
-        cursor: pointer;
-      }
+
   }
 }
 .menuPopUp-logo {
   display: block;
 }
+
+/* ------------Styles for section skills----------*/
+
 .skills {
   padding: 40px 0 20px;
-  background: rgba(102,255,255, .3);
-  background: rgba(102,128,255, .5);
   background: #f6f6f7;
   text-align: center;
   &-wrap {
@@ -153,11 +140,10 @@
     max-width: 400px;
   }
   &__tittle{
-    font-size: 1.5em;
-    &__escription {
-      font-size: 1.1em;
-
-    }
+    font-size: 2.3em;
+  }
+  &__description {
+    font-size: 1.1em;
   }
 }
 .skillList {
@@ -190,7 +176,11 @@
     margin-top: 20px;
   }
 }
+
+/* ------------Styles for section portfolio----------*/
+
 .portfolio {
+  padding-top: 20px;
   text-align: center;
   &-wrap {
     margin-bottom: 50px;
@@ -198,6 +188,9 @@
   &__tittle {
     margin-top: 30px;
     font-size: 2.3em;
+  }
+  &__description {
+    font-size: 1.1em;
   }
 }
 .project {
@@ -225,14 +218,18 @@
 }
 .tech-wrap {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
   justify-content: center;
   &__list {
-    margin-right: 10px;
+    margin: 2px;
     background: rgba(255, 229, 102, 0.8);
     padding: 5px;
   }
 }
+
+/* ------------Styles for section footer----------*/
+
 .footer {
   background: linear-gradient(#3d4c99, #f6f6f7);
   padding-top: 10px;
@@ -242,6 +239,7 @@
     margin: 20px auto;
   }
   &__email {
+    margin-top: 17px;
     a {
       border: 1px solid $white;
       padding: 10px;
@@ -261,36 +259,25 @@
     font-size: .8em;
   }
 }
-.custom-icon {
-  width: 53px;
-  height: 53px;
-
-}
-
-.custom-icon:hover .outer-shape{
-  transform:
-    scale(.55)
-    translate(-2px, -1px);
-}
-.custom-icon:hover .inner-shape{
-  transform:
-    scale(0.25)
-    translate(58px, 52px);
-}
-
-.outer-shape,
-.inner-shape {
-  transition: .2s;
-}
 .social {
   margin: 15px 0;
   padding-left: 9px;
 }
 
 
+
+//* ------------Styles for auxiliary classes----------*/
+
 .active {
   left: 0;
 }
+
+.activeLink {
+  border-bottom: 2px solid #ffe566;
+  color: #ffe566!important;
+}
+
+//* ------------Styles for media queries----------*/
 
 @media (min-width: 768px) {
   .aboutMe__description,

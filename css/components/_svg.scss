@@ -1,0 +1,53 @@
+// ==========================================================================
+// SVG
+// ==========================================================================
+
+.svg_humb {
+  fill: $white;
+  fill: #fff;
+  cursor: pointer;
+}
+.svg_cross {
+  // display: none;
+  fill: $white;
+  position: absolute;
+  top: 10px;
+  fill: #fff;
+  right: 29px;
+}
+.svg_cross:hover {
+  fill: #ffe566;
+  cursor: pointer;
+}
+
+.outer-shape1 {
+
+  transform:
+    translateY(-3px);
+    &:hover {
+      transform:
+        scale(1.1)
+        translateY(-1px);
+    }
+}
+
+.custom-icon {
+  width: 53px;
+  height: 53px;
+}
+
+.custom-icon:hover .outer-shape{
+  transform:
+    scale(.55)
+    translate(-2px, -1px);
+}
+.custom-icon:hover .inner-shape{
+  transform:
+    scale(0.25)
+    translate(58px, 52px);
+}
+.outer-shape1,
+.outer-shape,
+.inner-shape {
+  transition: .2s;
+}
