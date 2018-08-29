@@ -1,4 +1,4 @@
-// event for mobile menu  
+// event for mobile menu
 
 let humb = document.querySelector('#svg1');
 let popUp = document.querySelector('.menuPopUp');
@@ -19,11 +19,12 @@ let popUp = document.querySelector('.menuPopUp');
       document.getElementById('linkSkills').className += ' activeLink';
     } else document.getElementById('linkSkills').classList.remove('activeLink');
 
-    if (posTop >= 1159 & posTop <= 2854){
+    if (posTop >= 1159 & posTop <= 2500){
       document.getElementById('linkPortfolio').className += ' activeLink';
     } else document.getElementById('linkPortfolio').classList.remove('activeLink');
 
-    if (posTop >= 2855 & posTop <= 4000){
+    if (posTop >= 2501){
       document.getElementById('linkContact').className += ' activeLink';
     } else document.getElementById('linkContact').classList.remove('activeLink');
+    console.log(posTop);
   };

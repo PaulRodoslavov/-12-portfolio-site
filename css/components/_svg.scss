@@ -8,7 +8,6 @@
   cursor: pointer;
 }
 .svg_cross {
-  // display: none;
   fill: $white;
   position: absolute;
   top: 10px;
@@ -21,13 +20,12 @@
 }
 
 .outer-shape1 {
-
   transform:
     translateY(-3px);
     &:hover {
       transform:
         scale(1.1)
-        translateY(-1px);
+        translateY(-3px);
     }
 }
 
@@ -36,18 +34,12 @@
   height: 53px;
 }
 
-.custom-icon:hover .outer-shape{
+.custom-icon:hover{
   transform:
-    scale(.55)
-    translate(-2px, -1px);
+    scale(1.1)
 }
-.custom-icon:hover .inner-shape{
-  transform:
-    scale(0.25)
-    translate(58px, 52px);
-}
+
 .outer-shape1,
-.outer-shape,
-.inner-shape {
+.custom-icon {
   transition: .2s;
 }

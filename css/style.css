@@ -29,21 +29,17 @@ body {
 .outer-shape1 {
   transform: translateY(-3px); }
   .outer-shape1:hover {
-    transform: scale(1.1) translateY(-1px); }
+    transform: scale(1.1) translateY(-3px); }
 
 .custom-icon {
   width: 53px;
   height: 53px; }
 
-.custom-icon:hover .outer-shape {
-  transform: scale(0.55) translate(-2px, -1px); }
-
-.custom-icon:hover .inner-shape {
-  transform: scale(0.25) translate(58px, 52px); }
+.custom-icon:hover {
+  transform: scale(1.1); }
 
 .outer-shape1,
-.outer-shape,
-.inner-shape {
+.custom-icon {
   transition: .2s; }
 
 .container {
